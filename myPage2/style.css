@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar {
+    background-color: black;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    display: flex;
+    font-family: "Alata", sans-serif;
+
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    padding: 0px 80px;
+    display: inline-block;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+}
+
+.nav__links a:hover {
+    color: rgb(113, 103, 232);
+}
+
+.slogan {
+    font-family: "Alata", sans-serif;
+    color: white;
+    font-size: 60px;
+
+}
+
+#think {
+    position: absolute;
+    right: 220px;
+    top: 250px;
+}
+
+#create {
+    position: absolute;
+    right: 120px;
+    top: 380px;
+
+}
+
+#do {
+    position: absolute;
+    right: 270px;
+    top: 510px;
+}
+
+.logo img {
+    width: 350px;
+    position: absolute;
+    left: 50px;
+
+}
+
+.arkaplan img {
+    width: 1450px;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+
+
+.glow-on-hover {
+    width: 90px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+    position: absolute;
+    ;
+    z-index: 0;
+    border-radius: 10px;
+    right: 100px;
+    bottom: 50px;
+    font-size: 50px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#box {
+    max-width: 300px;
+    position: absolute;
+    left: 600px;
+    top: 34px;
+    color: red;
+
+}
+
+
+#search {
+    width: 120px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Alata", sans-serif;
+    color: white;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0:4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-color: black;
+
+
+}
+
+#search:focus {
+    width: 90%;
+}
+
+#search:hover {
+    transition: all 0.70s ease 0s;
+    background-color: white;
+}
+
+.logolar {
+    align-items: center;
+    display: flex;
+    margin: 22px 26%;
+    position: absolute;
+    bottom: 12px;
+    padding: 10px;
+
+}
+
+#tw-logo img {
+    width: 14%;
+    border: 1px solid black;
+    border-radius: 1px;
+    top: 0px;
+    right: 0px;
+    float: center;
+}
+
+#tw-logo img:hover {
+    transition: all 1s ease 0s;
+    background-color: skyblue;
+
+}
+
+#insta-logo img {
+    width: 14%;
+    border: 1px solid black;
+    border-radius: 2px;
+    top: 0px;
+    right: 0px;
+    float: center;
+}
+
+#insta-logo img:hover {
+    transition: all 1s ease 0s;
+    background-color: #cb0c88;
+}
+
+#sc-logo img {
+    width: 14%;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    top: 0px;
+    right: 0px;
+    float: center;
+}
+
+#sc-logo img:hover {
+    transition: all 1s ease 0s;
+    background-color: yellow;
+}
+
+#gg-logo img {
+    width: 14%;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    top: 0px;
+    right: 0px;
+    float: center;
+}
+
+#gg-logo img:hover {
+    transition: all 1s ease 0s;
+    background-color: green;
+}
